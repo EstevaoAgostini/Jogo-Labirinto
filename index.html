@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #82DEDB, #9FC1E4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            background-color: #f0f9f9;
+            border-radius: 7px;
+            border-color: #E7F7F7;
+            font-family: Arial, Helvetica, sans-serif;
+            border-style: outset;
+        }
+
+        .relogio {
+            font-size: 0.9em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Meu Jogo Interativo</h2>
+    <h3>Labirinto</h3>
+
+    <p id="mensagem" class="relogio"></p>
+    <p id="relogio" class="relogio"></p>
+    <div class="button">
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="recuperarSenha.html">Recuperar Senha</a>
+        <a href="sobre.html">Sobre</a>
+        <div>
+            <script>
+                const msg = document.getElementById("mensagem");
+                const hora = new Date().getHours();
+                if (hora < 12) msg.textContent = "Bom dia! Seja bem vindo ao jogo!";
+                else if (hora < 18) msg.textContent = "Boa Tarde! Seja bem vindo ao jogo!";
+                else msg.textContent = "Boa noite! Seja bem vindo ao jogo!";
+
+                function atualizaRelogio() {
+                    const agora = new Date();
+                    const relogio = document.getElementById("relogio");
+                    relogio.textContent = "Horario atual: " + agora.toLocaleTimeString();
+                }
+                setInterval(atualizaRelogio, 1000);
+                atualizaRelogio();
+            </script>
+</body>
+
+</html>

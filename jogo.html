@@ -1,0 +1,30 @@
+<DOCUMENT filename="jogo.html">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Labirinto</title>
+    <link rel="stylesheet" href="styleJogo.css">
+</head>
+
+<body>
+    <!-- Tela do Jogo -->
+    <div id="telaJogo" class="tela">
+        <h2 id="exibeNome"></h2>
+        <p id="exibeFase"></p>
+        <div id="labirinto"></div>
+    </div>
+
+    <!-- Tela Final -->
+    <div id="telaFinal" class="tela">
+        <h1>Parabéns!</h1>
+        <p>Você completou todas as fases 🎉</p>
+        <button onclick="location.reload()">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+</DOCUMENT>

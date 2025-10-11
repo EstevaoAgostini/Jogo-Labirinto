@@ -1,0 +1,125 @@
+/* Fundo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cadastro {
+    background: linear-gradient(to right, #82DEDB, #9FC1E4);
+}
+
+.login {
+    background: linear-gradient(to right, #EEE6B6, #DFF0D9);
+}
+.recuperarSenha{
+    background: linear-gradient(to right, #FDD8BF, #FBC6AF);
+}
+.desenvolvedores {
+    background: linear-gradient(to right, #CBB7DA, #9FC1E4);
+}
+
+/* Área de cadastro/login */
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels e inputs */
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Botões */
+a {
+    text-decoration: none;
+}
+
+.a-branco {
+    color: white;
+}
+
+.a-preto {
+    color: black;
+}
+
+.bnt-azul {
+    background-color: #4da3ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bnt-azul:hover {
+    background-color: #3b8be0;
+}
+
+.bnt-cinza {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bnt-cinza:hover {
+    background-color: #bbb;
+}
+
+.bnt-vermelho {
+    background-color: #FD746C;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bnt-vermelho:hover {
+    background-color: #f0807a;
+}
+
+/* Mensagem de sucesso */
+.mensagem-sucesso {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 15px;
+}

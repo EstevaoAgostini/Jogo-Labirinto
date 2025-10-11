@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <style>
+        .blocos {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Área dos alunos */
+        .alunos {
+            display: grid;
+            grid-template-columns: repeat(2, 250px);
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        /* Aluno individual */
+        .aluno {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 220px;
+            transition: transform 0.2s ease;
+        }
+
+        .aluno:hover {
+            transform: scale(1.05);
+        }
+
+        .aluno img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .aluno h3 {
+            margin: 10px 0 5px;
+            color: #222;
+        }
+
+        .aluno p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* Sobre o jogo */
+        .sobre {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: calc(2 * 230px + 25px);
+            margin: 0 auto 30px auto;
+        }
+
+        .sobre h2 {
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .sobre p {
+            margin: 5px 0;
+            color: #333;
+        }
+    </style>
+    <link rel="stylesheet" href="styleLogin.css">
+</head>
+
+<body class="desenvolvedores">
+    <div class="blocos">
+        <h1>Desenvolvedores</h1>
+
+        <div class="alunos">
+            <div class="aluno">
+                <img src="" alt="Avatar do membro">
+                <h3>Eduardo Erlacher Melo</h3>
+                <p>Implementou a lógica JavaScript.</p>
+            </div>
+
+            <div class="aluno">
+                <img src="" alt="Avatar do membro">
+                <h3>Estevão Nunes Agostini</h3>
+                <p>Responsável pelo layout e telas. </p>
+            </div>
+
+            <div class="aluno">
+                <img src="" alt="Avatar do membro">
+                <h3>João Pedro Miranda Dossi</h3>
+                <p>Organizou os dados e integrou o jogo.</p>
+            </div>
+
+            <div class="aluno">
+                <img src="" alt="Avatar do membro">
+                <h3>Matheus Duarte Pimenta</h3>
+                <p>Organizou os dados e integrou o jogo.</p>
+            </div>
+        </div>
+
+        <div class="sobre">
+            <h2>Sobre o Jogo</h2>
+            <p><strong>Nome do jogo:</strong> Labirinto com Movimentação por Teclado</p> <br>
+            <p><strong>Descrição:</strong> Conduzir um personagem através de um labirinto até a posição de chegada, utilizando as teclas direcionais (ou WASD) do teclado, evitando colisões com as paredes.</p> <br>
+            <p><strong>Data de lançamento:</strong> 25/10/2024</p>
+        </div>
+
+        <button type="button" class="bnt-cinza"><a class="a-preto" href="index.html">Voltar à Página Inicial</a></button>
+    </div>
+</body>
+
+</html>
