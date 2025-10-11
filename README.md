@@ -1,2 +1,2 @@
 # Jogo-Labirinto
-Jogo de labirinto interativo
+Trabalho da disciplina programação web sobre um jogo interativo (labirinto)
