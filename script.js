@@ -148,7 +148,6 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// Iniciar o jogo diretamente após o login
 document.addEventListener('DOMContentLoaded', () => {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
     if (!user) {
@@ -156,7 +155,26 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
     nomeJogador = user.nome;
-    document.getElementById("exibeNome").innerText = `Olá, ${nomeJogador}!`;
+    const exibeNome = document.getElementById("exibeNome");
+    if (exibeNome) exibeNome.innerText = `Olá, ${nomeJogador}!`;
+
     mostrarTela("telaJogo");
     carregarLabirinto();
 });
+
+// Mensagem de boas-vindas
+const msg = document.getElementById("mensagem");
+const hora = new Date().getHours();
+if (hora < 12) msg.textContent = "Bom dia! Seja bem vindo ao jogo!";
+else if (hora < 18) msg.textContent = "Boa tarde! Seja bem vindo ao jogo!";
+else msg.textContent = "Boa noite! Seja bem vindo ao jogo!";
+
+// Relógio
+function atualizaRelogio() {
+    const agora = new Date();
+    const relogio = document.getElementById("relogio");
+    if (relogio) relogio.textContent = "Horário atual: " + agora.toLocaleTimeString();
+}
+setInterval(atualizaRelogio, 1000);
+atualizaRelogio();
+
