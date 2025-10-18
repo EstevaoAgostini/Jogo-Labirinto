@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de Login e Cadastro</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js" defer></script>
 </head>
 
 <body class="tela-inicio">
@@ -31,6 +30,25 @@
             </div>
         </div>
     </div>
+        <script>
+        // Já que é um script simples, deixei ele aqui logo. 
+
+        // Mensagem de boas-vindas
+        const msg = document.getElementById("mensagem");
+        const hora = new Date().getHours();
+        if (hora < 12) msg.textContent = "Bom dia! Seja bem vindo ao jogo!";
+        else if (hora < 18) msg.textContent = "Boa tarde! Seja bem vindo ao jogo!";
+        else msg.textContent = "Boa noite! Seja bem vindo ao jogo!";
+
+        // Relógio
+        function atualizaRelogio() {
+            const agora = new Date();
+            const relogio = document.getElementById("relogio");
+            if (relogio) relogio.textContent = "Horário atual: " + agora.toLocaleTimeString();
+        }
+        setInterval(atualizaRelogio, 1000);
+        atualizaRelogio();
+    </script>
 </body>
 
 </html>
