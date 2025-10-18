@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="senhas.js" defer></script>
-    <link rel="stylesheet" href="styleLogin.css">
-    <title>Página Inicial</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
-<body class="index">
-    <div class="container">
-        <h1>Meu jogo interativo</h1>
-        <h2>Labirinto</h2>
-    </div>
-
-    <p id="mensagem" class="relogio"><br></p>
-    <p id="relogio" class="relogio"></p>
-    
-    <div>
-        <div class="inicio">
-            <a class="bnt-azul" href="login.html">Login</a>
-            <a class="bnt-azul" href="cadastro.html">Cadastro</a>
-            <a class="bnt-azul" href="recuperarSenha.html">Recuperar Senha</a>
-            <a class="bnt-azul" href="sobre.html">Sobre</a>
+<body class="tela-inicio">
+    <div class="container-inicio">
+        <!-- Lado esquerdo -->
+        <div class="lado-esquerdo">
+            <h2>Meu jogo interativo</h2>
+            <p>Labirinto</p>
         </div>
+
+        <!-- Lado direito -->
+        <div class="lado-direito">
+            <h2>Opções: </h2>
+            <div class="inicio">
+                <button class="btn-inicio" onclick="location.href='login.html'">LOGIN</button>
+                <button class="btn-inicio" onclick="location.href='cadastro.html'">CADASTRO</button>
+                <button class="btn-inicio" onclick="location.href='recuperarSenha.html'">RECUPERAR SENHA</button>
+                <button class="btn-inicio" onclick="location.href='sobre.html'">SOBRE</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
