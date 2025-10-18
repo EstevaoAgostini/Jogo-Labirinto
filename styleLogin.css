@@ -1,11 +1,11 @@
+/* Fundo */
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     margin: 0;
-    min-height: 100vh;
 }
 
 .cadastro {
@@ -15,40 +15,50 @@ body {
 .login {
     background: linear-gradient(to right, #EEE6B6, #DFF0D9);
 }
-
-.recuperarSenha {
+.recuperarSenha{
     background: linear-gradient(to right, #FDD8BF, #FBC6AF);
 }
-
 .desenvolvedores {
     background: linear-gradient(to right, #CBB7DA, #9FC1E4);
 }
 
+/* Área de cadastro/login */
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Título */
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
     color: #333;
     margin-bottom: 20px;
 }
 
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
+/* Labels e inputs */
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
 }
 
-.relogio {
-    font-size: 0.9em;
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
 }
 
+/* Botões */
 a {
     text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 7px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-style: outset;
-    border-color: #E7F7F7;
 }
 
 .a-branco {
@@ -107,36 +117,7 @@ a {
     background-color: #f0807a;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: #fff;
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
-}
-
-label {
-    display: block;
-    text-align: left;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #333;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
+/* Mensagem de sucesso */
 .mensagem-sucesso {
     color: #28a745;
     font-weight: bold;
