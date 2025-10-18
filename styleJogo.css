@@ -54,12 +54,15 @@ body {
     background-color: #ccc;
     color: #333;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 6px;
     width: 100%;
-    margin-top: 10px;
+    max-width: 300px;  
+    margin: 10px auto 0 auto;
     cursor: pointer;
     font-weight: bold;
+    display: block;
+    text-align: center;
 }
 
 .bnt-cinza:hover {
