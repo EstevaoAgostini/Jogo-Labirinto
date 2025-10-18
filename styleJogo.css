@@ -17,8 +17,6 @@ body {
 
 #labirinto {
     display: grid;
-    grid-template-columns: repeat(20, 25px);
-    grid-template-rows: repeat(20, 25px);
     justify-content: center;
     margin: 20px auto;
     gap: 1px;

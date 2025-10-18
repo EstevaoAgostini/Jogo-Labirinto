@@ -15,11 +15,31 @@ body {
 .login {
     background: linear-gradient(to right, #EEE6B6, #DFF0D9);
 }
-.recuperarSenha{
+
+.recuperarSenha {
     background: linear-gradient(to right, #FDD8BF, #FBC6AF);
 }
+
 .desenvolvedores {
     background: linear-gradient(to right, #CBB7DA, #9FC1E4);
+}
+
+.index {
+    background: linear-gradient(to right, #82DEDB, #9FC1E4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inicio {
+    background-color: #ffffffdd;
+    padding: 40px 50px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Área de cadastro/login */

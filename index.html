@@ -4,69 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+    <script src="senhas.js" defer></script>
+    <link rel="stylesheet" href="styleLogin.css">
     <title>Página Inicial</title>
     <style>
-        /* EU DESISTO DE TENTAR UNFICAR O CSS EM UM SÓ ARQUIVO */
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #82DEDB, #9FC1E4);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h2 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: xx-large;
-        }
-
-        h3 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: x-large;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-            display: inline-block;
-            padding: 10px;
-            margin: 5px;
-            background-color: #f0f9f9;
-            border-radius: 7px;
-            border-color: #E7F7F7;
-            font-family: Arial, Helvetica, sans-serif;
-            border-style: outset;
-        }
-
-        .relogio {
-            font-size: 0.9em;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
     </style>
 </head>
 
-<body>
-    <h2>Meu Jogo Interativo</h2>
-    <h3>Labirinto</h3>
+<body class="index">
+    <div class="container">
+        <h1>Meu jogo interativo</h1>
+        <h2>Labirinto</h2>
+    </div>
 
-    <p id="mensagem" class="relogio"></p>
+    <p id="mensagem" class="relogio"><br></p>
     <p id="relogio" class="relogio"></p>
-    <div class="button">
-        <div class="container">
-            <a href="login.html">Login</a>
-            <a href="cadastro.html">Cadastro</a>
-            <a href="recuperarSenha.html">Recuperar Senha</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="jogo.html">Visitante sla acessar o jogo rapidamente eu to com preguiça de fazer o login só me deixa testar o jogo logo temporário ou se quiser deixe aqui mesmo com outro nome é claro</a>
+    
+    <div>
+        <div class="inicio">
+            <a class="bnt-azul" href="login.html">Login</a>
+            <a class="bnt-azul" href="cadastro.html">Cadastro</a>
+            <a class="bnt-azul" href="recuperarSenha.html">Recuperar Senha</a>
+            <a class="bnt-azul" href="sobre.html">Sobre</a>
         </div>
 </body>
 
