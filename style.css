@@ -199,6 +199,22 @@ a {
 }
 
 /*EXCLUSIVO DO JOGO*/
+.setas {
+    background-color: rgb(201, 201, 201);
+    border: 1px solid #000000;
+    color: black;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 48px;
+    margin: 5px;
+}
+
+.mainsetas {
+    /*coloque coisas aqui se precisar*/
+    margin-top: 20px;
+}
 .body-jogo {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -247,6 +263,10 @@ a {
 
 .saida {
     background: green;
+}
+
+.body-jogo {
+    background: linear-gradient(to top, lightblue, rgb(115, 204, 255));
 }
 
 /* EXCLUSIVO DO SOBRE */
@@ -314,21 +334,4 @@ a {
 .sobre p {
     margin: 5px 0;
     color: #333;
-}
-
-.setas {
-    background-color: rgb(201, 201, 201);
-    border: 1px solid #000000;
-    color: black;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 48px;
-    margin: 5px;
-}
-
-.mainsetas {
-    /*coloque coisas aqui se precisar*/
-    margin-top: 20px;
 }
