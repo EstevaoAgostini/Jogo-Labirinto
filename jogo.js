@@ -250,6 +250,12 @@ document.addEventListener("keydown", (e) => {
         }
     }
 });
+// Controles por botões
+document.getElementById("cima").addEventListener("click", () => moverJogador(-1, 0));
+document.getElementById("baixo").addEventListener("click", () => moverJogador(1, 0));
+document.getElementById("direita").addEventListener("click", () => moverJogador(0, -1));
+document.getElementById("esquerda").addEventListener("click", () => moverJogador(0, 1));
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
