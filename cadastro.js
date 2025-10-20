@@ -48,7 +48,7 @@ function handleCadastro() {
     usuarios.push({ nome, email, senha });
     saveUsuarios(usuarios);
 
-    mensagemSucesso.style.display = 'block';
+    alert('Cadastro realizado com sucesso!');
     form.reset();
 
 }
