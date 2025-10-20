@@ -198,13 +198,6 @@ a {
     background-color: #f0807a;
 }
 
-/* Mensagem de sucesso */
-.mensagem-sucesso {
-    color: #28a745;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
 /*EXCLUSIVO DO JOGO*/
 .body-jogo {
     font-family: Arial, sans-serif;
