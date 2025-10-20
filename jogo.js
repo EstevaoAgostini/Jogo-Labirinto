@@ -1,7 +1,7 @@
 // ============ ÁREA DO JOGO ====================
 const labirintos = [
     //FASE 1 FÁCIL 
-    
+
     [
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1],
@@ -257,6 +257,23 @@ document.getElementById("baixo").addEventListener("click", () => moverJogador(1,
 document.getElementById("direita").addEventListener("click", () => moverJogador(0, -1));
 document.getElementById("esquerda").addEventListener("click", () => moverJogador(0, 1));
 
+let milissegundos = 0;
+
+function atualizarTempo() {
+    let mins = Math.floor(milissegundos / 60000);
+    let secs = Math.floor((milissegundos % 60000) / 1000);
+    let milis = milissegundos % 1000;
+
+    document.getElementById("tempo").textContent =
+        `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}:${milis.toString().padStart(3, '0')}`;
+}
+
+window.onload = () => {
+    setInterval(() => {
+        milissegundos += 10;
+        atualizarTempo();
+    }, 10);
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
