@@ -71,7 +71,7 @@
 .btn-inicio:hover {
     background: #57b894;
     color: white;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 30px;
     padding: 10px 40px;
     background: #459a7c;
@@ -322,4 +322,21 @@ a {
 .sobre p {
     margin: 5px 0;
     color: #333;
+}
+
+.setas {
+    background-color: rgb(201, 201, 201);
+    border: 1px solid #000000;
+    color: black;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 48px;
+    margin: 5px;
+}
+
+.mainsetas {
+    /*coloque coisas aqui se precisar*/
+    margin-top: 20px;
 }
