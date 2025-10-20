@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const usuario = usuarios.find(u => u.email === email);
 
         if (!usuario) {
-            yorn.textContent = "E-mail não encontrado";
+            yorn.textContent = "E-mail não encontrado!";
             yorn.style.color = "red";
             yorn.style.display = "block";
             senhaResultado.style.display = "none";
         } else {
-            yorn.textContent = "E-mail válido";
+            yorn.textContent = "E-mail válido!";
             yorn.style.color = "green";
             yorn.style.display = "block";
             senhaResultado.textContent = "Senha: " + usuario.senha;
