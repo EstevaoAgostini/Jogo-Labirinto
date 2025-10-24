@@ -1,6 +1,6 @@
 /*EXCLUSIVO DO INDEX*/
 .tela-inicio {
-    background: linear-gradient(to right, white, #57b894);
+    background: linear-gradient(to right, white, #57a5b8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,8 @@
 .container-inicio {
     display: flex;
     width: 850px;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -18,7 +19,7 @@
 }
 
 .lado-esquerdo {
-    background-color: #57b894;
+    background-color: #57a5b8;
     color: white;
     width: 40%;
     display: flex;
@@ -46,7 +47,7 @@
 }
 
 .lado-direito h2 {
-    color: #57b894;
+    color: #57a5b8;
     margin-bottom: 15px;
 }
 
@@ -69,12 +70,11 @@
 }
 
 .btn-inicio:hover {
-    background: #57b894;
+    background: #57a5b8;
     color: white;
     border: 1px solid #ccc;
     border-radius: 30px;
     padding: 10px 40px;
-    background: #459a7c;
 }
 
 /* GERAL */
@@ -85,22 +85,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-.cadastro {
-    background: linear-gradient(to right, #82DEDB, #9FC1E4);
-}
-
-.login {
-    background: linear-gradient(to right, #EEE6B6, #DFF0D9);
-}
-
-.recuperarSenha {
-    background: linear-gradient(to right, #FDD8BF, #FBC6AF);
-}
-
-.desenvolvedores {
-    background: linear-gradient(to right, #CBB7DA, #9FC1E4);
+    background: linear-gradient(to right, white, #57a5b8);
 }
 
 /* Área de cadastro/login */
@@ -151,7 +136,7 @@ a {
 }
 
 .bnt-azul {
-    background-color: #4da3ff;
+    background-color: #57a5b8;
     color: white;
     border: none;
     padding: 10px;
@@ -180,22 +165,6 @@ a {
 
 .bnt-cinza:hover {
     background-color: #bbb;
-}
-
-.bnt-vermelho {
-    background-color: #FD746C;
-    color: #333;
-    border: none;
-    padding: 10px;
-    border-radius: 6px;
-    width: 100%;
-    margin-top: 10px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.bnt-vermelho:hover {
-    background-color: #f0807a;
 }
 
 /*EXCLUSIVO DO JOGO*/
@@ -271,32 +240,31 @@ a {
 
 /* EXCLUSIVO DO SOBRE */
 
-.blocos {
-    text-align: center;
-    padding: 40px;
-}
-
 /* Área dos alunos */
 .alunos {
     display: grid;
     grid-template-columns: repeat(2, 250px);
     justify-content: center;
-    gap: 25px;
-    margin-bottom: 30px;
+    gap: 20px;
+    margin-bottom: 15px; /* Diminuída a distância até o botão */
+    text-align: center;
+    padding: 20px;
 }
 
 /* Aluno individual */
 .aluno {
-    background: white;
+    background: #57a5b8;
     border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     padding: 20px;
     width: 220px;
-    transition: transform 0.2s ease;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .aluno:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .aluno img {
@@ -304,15 +272,17 @@ a {
     height: 80px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 3px solid white;
 }
 
 .aluno h3 {
     margin: 10px 0 5px;
-    color: #222;
+    color: white;
+    font-weight: bold;
 }
 
 .aluno p {
-    color: #555;
+    color: #e0f7ef;
     font-size: 14px;
 }
 
@@ -322,16 +292,7 @@ a {
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: calc(2 * 230px + 25px);
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto 30px auto;
-}
-
-.sobre h2 {
-    margin-bottom: 15px;
-    color: #222;
-}
-
-.sobre p {
-    margin: 5px 0;
-    color: #333;
 }

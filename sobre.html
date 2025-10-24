@@ -2,51 +2,53 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="desenvolvedores">
-    <div class="blocos">
-        <h1>Desenvolvedores</h1>
-
-        <div class="alunos">
-            <div class="aluno">
-                <img src="" alt="Avatar do membro">
-                <h3>Eduardo Erlacher Melo</h3>
-                <p>Implementou a lógica JavaScript.</p>
-            </div>
-
-            <div class="aluno">
-                <img src="imgs/estevao.jpg" alt="Avatar do membro">
-                <h3>Estevão Nunes Agostini</h3>
-                <p>Responsável pelo layout e telas. </p>
-            </div>
-
-            <div class="aluno">
-                <img src="imgs/joao-pedro.jpg" alt="Avatar do membro">
-                <h3>João Pedro Miranda Dossi</h3>
-                <p>Organizou os dados e integrou o jogo.</p>
-            </div>
-
-            <div class="aluno">
-                <img src="" alt="Avatar do membro">
-                <h3>Matheus Duarte Pimenta</h3>
-                <p>Organizou os dados e integrou o jogo.</p>
-            </div>
-        </div>
-
-        <div class="sobre">
+<body class="tela-inicio">
+    <div class="container-inicio">
+        <!-- Lado esquerdo -->
+        <div class="lado-esquerdo">
             <h2>Sobre o Jogo</h2>
             <p><strong>Nome do jogo:</strong> Labirinto com Movimentação por Teclado</p> <br>
-            <p><strong>Descrição:</strong> Conduzir um personagem através de um labirinto até a posição de chegada, utilizando as teclas direcionais (ou WASD) do teclado, evitando colisões com as paredes.</p> <br>
+            <p><strong>Descrição:</strong> Conduzir um personagem através de um labirinto até a posição de chegada,
+                utilizando as teclas direcionais (ou WASD) do teclado, evitando colisões com as paredes.</p> <br>
             <p><strong>Data de lançamento:</strong> 25/10/2024</p>
         </div>
 
-        <button type="button" class="bnt-cinza" onclick="window.location.href='index.html'">Voltar</button>
+        <!-- Lado direito -->
+        <div class="lado-direito">
+            <h2>Desenvolvedores</h2>
+            <div class="alunos">
+                <div class="aluno">
+                    <img src="" alt="Avatar do membro">
+                    <h3>Eduardo Erlacher Melo</h3>
+                    <p>Implementou a lógica JavaScript.</p>
+                </div>
+
+                <div class="aluno">
+                    <img src="imgs/estevao.jpg" alt="Avatar do membro">
+                    <h3>Estevão Nunes Agostini</h3>
+                    <p>Responsável pelo layout e telas. </p>
+                </div>
+
+                <div class="aluno">
+                    <img src="imgs/joao-pedro.jpg" alt="Avatar do membro">
+                    <h3>João Pedro Miranda Dossi</h3>
+                    <p>Organizou os dados e integrou o jogo.</p>
+                </div>
+
+                <div class="aluno">
+                    <img src="" alt="Avatar do membro">
+                    <h3>Matheus Duarte Pimenta</h3>
+                    <p>Organizou os dados e integrou o jogo.</p>
+                </div>
+            </div>
+            <button type="button" class="bnt-azul" onclick="window.location.href='index.html'">Voltar</button>
+        </div>
     </div>
 </body>
 
