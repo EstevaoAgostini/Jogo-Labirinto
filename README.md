@@ -1,5 +1,5 @@
 # Jogo-Labirinto
-Trabalho da disciplina programação web sobre um jogo interativo (labirinto)
+Trabalho da disciplina programação web sobre um jogo interativo (labirinto).
 O projeto é um jogo de labirinto interativo desenvolvido com HTML, CSS e JavaScript puro. Ele combina um sistema simples de autenticação com telas de login, cadastro e recuperação de senha, além de oferecer um jogo dividido em várias fases de dificuldade crescente. O objetivo é proporcionar uma experiência completa ao usuário, unindo navegação entre páginas e interatividade dentro do jogo.
 
 Na tela inicial, o jogador encontra o título e as principais opções: acessar o login, cadastrar-se, recuperar a senha, saber mais sobre o jogo ou iniciar diretamente a partida. Essa página exibe também uma mensagem de boas-vindas personalizada de acordo com o horário do dia e um relógio que é atualizado em tempo real.

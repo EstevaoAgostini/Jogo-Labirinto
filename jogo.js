@@ -265,3 +265,5 @@ document.addEventListener('DOMContentLoaded', () => {
     mostrarTela("telaJogo");
     carregarLabirinto();
 });
+
+//<!--ACHO QUE TERMINAMOS!!!-->
