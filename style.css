@@ -292,34 +292,4 @@ input {
     margin: 0 auto 30px auto;
 }
 
-/* AREA DE TESTE PARA CELULAR!!!*/
-
-@media (max-width: 600px) {
-
-    #labirinto {
-        width: 90vw;
-        gap: 1px;
-    }
-
-    .celula {
-        width: 5vw; 
-        height: 5vw;
-    }
-
-    .setas {
-        width: 20vw; 
-        height: 20vw;
-        font-size: 8vw;
-    }
-
-    .mainsetas {
-        margin-top: 3vh;
-    }
-
-    #exibeNome, #exibeFase {
-        font-size: 5vw; 
-    }
-}
-
-
 /*<!--ACHO QUE TERMINAMOS!!!-->*/
