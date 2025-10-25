@@ -166,9 +166,12 @@ input {
 
 /*EXCLUSIVO DO JOGO*/
 .setas {
-    background-color: rgb(201, 201, 201);
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #ccc;
     border: 1px solid #000000;
-    color: black;
+    color: #333;
     width: 100px;
     height: 100px;
     padding: 10px;
@@ -178,7 +181,6 @@ input {
 }
 
 .mainsetas {
-    /*coloque coisas aqui se precisar*/
     margin-top: 20px;
 }
 .body-jogo {
