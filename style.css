@@ -38,6 +38,14 @@
     color: white;
 }
 
+.imagem-esquerdo {
+    background: #57a5b8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 220px;
+}
+
 .lado-direito {
     width: 60%;
     display: flex;
