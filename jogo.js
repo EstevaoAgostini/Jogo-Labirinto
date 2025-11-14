@@ -256,7 +256,7 @@ document.getElementById("esquerda").addEventListener("click", () => moverJogador
         { id: "cima",      dx: -1, dy: 0 },
         { id: "baixo",     dx:  1, dy: 0 },
         { id: "esquerda",  dx:  0, dy: 1 },
-        { id: "direita",   dx:  0, dy: -1 }
+        { id: "direita",   dx:  0, dy: 1 }
     ];
 
     const holdTime = 750;
