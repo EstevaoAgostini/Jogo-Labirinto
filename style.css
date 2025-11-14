@@ -170,7 +170,7 @@ input {
     margin-top: 10px;
     cursor: pointer;
     font-weight: bold;
-    background-color: red;
+    background-color: #ccc;
     border: 1px solid #000000;
     color: #333;
     width: 100px;
@@ -294,6 +294,5 @@ input {
     max-width: 500px;
     margin: 0 auto 30px auto;
 }
-
 
 /*<!--ACHO QUE TERMINAMOS!!!-->*/
