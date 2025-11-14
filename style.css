@@ -295,5 +295,7 @@ input {
     margin: 0 auto 30px auto;
 }
 
-
+@media (max-width:767px){
+    
+}
 /*<!--ACHO QUE TERMINAMOS!!!-->*/
