@@ -314,3 +314,23 @@ input {
 }
 
 /*<!--ACHO QUE TERMINAMOS!!!-->*/
+
+
+/* ESCALA AUTOMÁTICA DO JOGO */
+#containerJogo {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#telaJogo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center center;
+}
+
+#gameStage {
+    display: inline-block; /* mantém tamanho natural */
+}
