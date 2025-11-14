@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
         <title>Jogo - Labirinto</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
         <script src="jogo.js" defer></script>
 
 
@@ -19,7 +19,7 @@
             <p id="exibeFase"></p>
             <div id="labirinto"></div>
             <div name="setas" class="mainsetas">
-                <button class="setas" id="cima">&#8593;</button><br/>
+                <button class="setas" id="cima">&#8593;</button><br />
                 <button class="setas" id="direita">&#8592;</button>
                 <button class="setas" id="baixo">&#8595;</button>
                 <button class="setas" id="esquerda">&#8594;</button>
@@ -33,7 +33,20 @@
             <button type="button" class="bnt-azul" onclick="location.reload()">Jogar Novamente</button>
             <button type="button" class="bnt-cinza" onclick="window.location.href='index.html'">Voltar</button>
         </div>
+        <script>
+            (function () {
+                let lastTouchEnd = 0;
 
+                document.addEventListener('touchend', function (e) {
+                    const now = Date.now();
+                    if (now - lastTouchEnd <= 300) {
+                        e.preventDefault();
+                    }
+                    lastTouchEnd = now;
+                }, { passive: false });
+            })();
+        </script>
     </body>
-<!--ACHO QUE TERMINAMOS!!!-->
+    <!--ACHO QUE TERMINAMOS!!!-->
+
     </html>
