@@ -211,6 +211,7 @@ function moverJogador(dl, dc) {
         if (lab[novaLinha][novaColuna] === 2) {
             faseAtual++;
             if (faseAtual >= labirintos.length) {
+                window.alert("PARABÉNS! VOCÊ COMPLETOU O JOGO!!!");
                 window.location.href = "index.html";
                 return;
             }
