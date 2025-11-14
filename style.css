@@ -186,6 +186,25 @@ input {
 }
 
 .body-jogo {
+    /* BLOQUEAR SELEÇÃO DE TEXTO */
+    user-select: none;
+    -webkit-user-select: none; /* Safari, Chrome Mobile */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge antigo */
+
+    /* BLOQUEAR MENU DE TOQUE (iOS: copiar/colar, compartilhar, etc.) */
+    -webkit-touch-callout: none;
+
+    /* BLOQUEAR HIGHLIGHT AZUL EM ALGUNS ANDROID (opcional) */
+    -webkit-tap-highlight-color: transparent;
+
+    /* BLOQUEAR DRAG DE IMAGENS E ELEMENTOS EM ALGUNS BROWSERS */
+    -webkit-user-drag: none;
+    user-drag: none;
+
+    /* IMPEDIR QUE TOQUE LONGO CAUSE SELEÇÃO EM ALGUNS ANDROID */
+    touch-action: none; /* Cuidado: isso também bloqueia scroll dentro do elemento */
+
     background: linear-gradient(to top, lightblue, rgb(115, 204, 255));
     font-family: Arial, sans-serif;
     text-align: center;
