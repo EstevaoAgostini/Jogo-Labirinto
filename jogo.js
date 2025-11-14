@@ -211,7 +211,7 @@ function moverJogador(dl, dc) {
         if (lab[novaLinha][novaColuna] === 2) {
             faseAtual++;
             if (faseAtual >= labirintos.length) {
-                mostrarTela("telaFinal");
+                window.location.href = "index.html";
                 return;
             }
             posicaoJogador = { linha: 1, coluna: 1 };
