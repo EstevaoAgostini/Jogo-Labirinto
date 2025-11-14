@@ -259,7 +259,7 @@ document.getElementById("esquerda").addEventListener("click", () => moverJogador
         { id: "direita",   dx:  0, dy: 1 }
     ];
 
-    const holdTime = 1000;   // 1 segundo
+    const holdTime = 750;
     const repeatSpeed = 150; // velocidade da repetição (ms)
 
     botoes.forEach(btn => {
