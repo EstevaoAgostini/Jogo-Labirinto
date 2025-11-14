@@ -251,48 +251,6 @@ document.getElementById("cima").addEventListener("click", () => moverJogador(-1,
 document.getElementById("baixo").addEventListener("click", () => moverJogador(1, 0));
 document.getElementById("direita").addEventListener("click", () => moverJogador(0, -1));
 document.getElementById("esquerda").addEventListener("click", () => moverJogador(0, 1));
-(function() {
-    const botoes = [
-        { id: "cima",      dx: -1, dy: 0 },
-        { id: "baixo",     dx:  1, dy: 0 },
-        { id: "esquerda",  dx:  0, dy: -1 },
-        { id: "direita",   dx:  0, dy: 1 }
-    ];
-
-    const holdTime = 750;
-    const repeatSpeed = 150; // velocidade da repetição (ms)
-
-    botoes.forEach(btn => {
-        const elemento = document.getElementById(btn.id);
-        let timerHold;
-        let intervalRepeat;
-
-        function iniciarHold() {
-            // Inicia o timer de 1s para começar repetição
-            timerHold = setTimeout(() => {
-                intervalRepeat = setInterval(() => {
-                    moverJogador(btn.dx, btn.dy);
-                }, repeatSpeed);
-            }, holdTime);
-        }
-
-        function pararHold() {
-            clearTimeout(timerHold);
-            clearInterval(intervalRepeat);
-        }
-
-        // Mouse
-        elemento.addEventListener("mousedown", iniciarHold);
-        elemento.addEventListener("mouseup", pararHold);
-        elemento.addEventListener("mouseleave", pararHold);
-
-        // Touch (celulares)
-        elemento.addEventListener("touchstart", iniciarHold);
-        elemento.addEventListener("touchend", pararHold);
-        elemento.addEventListener("touchcancel", pararHold);
-    });
-})();
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
