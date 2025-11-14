@@ -205,7 +205,6 @@ input {
     /* IMPEDIR QUE TOQUE LONGO CAUSE SELEÇÃO EM ALGUNS ANDROID */
     touch-action: none; /* Cuidado: isso também bloqueia scroll dentro do elemento */
 
-    background: linear-gradient(to right, white, #57a5b8);
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
