@@ -296,6 +296,7 @@ input {
 @media (max-width: 767px) {
   html, body {
     touch-action: manipulation;
+    background-color: #333;
   }
   .celula {
     width: 50px;
