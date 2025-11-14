@@ -170,7 +170,7 @@ input {
     margin-top: 10px;
     cursor: pointer;
     font-weight: bold;
-
+    background-color: red;
     border: 1px solid #000000;
     color: #333;
     width: 100px;
@@ -295,9 +295,5 @@ input {
     margin: 0 auto 30px auto;
 }
 
-@media (max-width: 767px) {
-    .setas {
-        background-color: red;
-    }
-}
+
 /*<!--ACHO QUE TERMINAMOS!!!-->*/
