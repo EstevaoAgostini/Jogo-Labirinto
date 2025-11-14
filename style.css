@@ -297,10 +297,8 @@ input {
 
 @media (max-width: 767px) {
 
-    html,
-    body {
+    html,body {
         touch-action: manipulation;
-        background-color: #333;
     }
     .titulojogox {
         font-size: 60px;
@@ -310,27 +308,9 @@ input {
         font-size: 30px;
         color: black;
     }
-    .celula {
-        width: 30px;
-        height: 30px;
-        border-radius: 4px;
-    }
+    
 
-    .setas {
-        margin-top: 50px;
-        cursor: pointer;
-        font-weight: bold;
-        background-color: #ccc;
-        border: 1px solid #000000;
-        color: #333;
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 48px;
-        margin: 5px;
-        touch-action: manipulation;
-    }
+    
 }
 
 /*<!--ACHO QUE TERMINAMOS!!!-->*/
