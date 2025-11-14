@@ -267,3 +267,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //<!--ACHO QUE TERMINAMOS!!!-->
+
+// === ESCALA AUTOMÁTICA ===
+(function () {
+    const tela = document.getElementById("telaJogo");
+    const stage = document.getElementById("gameStage");
+
+    function ajustarEscala() {
+        const naturalW = stage.scrollWidth;
+        const naturalH = stage.scrollHeight;
+
+        if (!naturalW || !naturalH) return;
+
+        const scaleX = window.innerWidth / naturalW;
+        const scaleY = window.innerHeight / naturalH;
+        const scale = Math.min(scaleX, scaleY);
+
+        tela.style.transform = `translate(-50%, -50%) scale(${scale})`;
+    }
+
+    // Reage quando o labirinto cresce
+    const obs = new ResizeObserver(ajustarEscala);
+    obs.observe(stage);
+
+    window.addEventListener("load", ajustarEscala);
+    window.addEventListener("resize", ajustarEscala);
+})();
+
