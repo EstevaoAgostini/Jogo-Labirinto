@@ -214,11 +214,10 @@ input {
 }
 
 .celula {
-    width: 4vw;   /* 4% da largura da viewport */
-    height: 4vw;  /* altura igual à largura para manter quadrado */
-    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
 }
-
 
 .parede {
     background: #333;
