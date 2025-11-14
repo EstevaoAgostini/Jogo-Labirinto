@@ -300,14 +300,7 @@ input {
     html,body {
         touch-action: manipulation;
     }
-    .titulojogox {
-        font-size: 60px;
-        color: black;
-    }
-    .fasejogox {
-        font-size: 30px;
-        color: black;
-    }
+
     
 
     
