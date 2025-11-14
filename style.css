@@ -182,9 +182,12 @@ input {
 }
 
 @media (max-width: 767px) {
-    .setas {
-        touch-action: manipulation;
-    }
+  html, body {
+    touch-action: manipulation;
+  }
+  .setas {
+    touch-action: manipulation;
+  }
 }
 
 .mainsetas {
