@@ -254,16 +254,16 @@ document.getElementById("esquerda").addEventListener("click", () => moverJogador
 
 document.addEventListener('DOMContentLoaded', () => {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
-    if (!user) {
-        window.location.href = 'login.html';
-        return;
-    }
-    nomeJogador = user.nome;
+
+
+    nomeJogador = user ? user.nome : "Jogador";
+
     const exibeNome = document.getElementById("exibeNome");
     if (exibeNome) exibeNome.innerText = `Olá, ${nomeJogador}!`;
 
     mostrarTela("telaJogo");
     carregarLabirinto();
 });
+
 
 //<!--ACHO QUE TERMINAMOS!!!-->

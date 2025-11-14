@@ -165,6 +165,7 @@ input {
 }
 
 /*EXCLUSIVO DO JOGO*/
+
 .setas {
     margin-top: 10px;
     cursor: pointer;
@@ -178,6 +179,12 @@ input {
     border-radius: 10px;
     font-size: 48px;
     margin: 5px;
+}
+
+@media (max-width: 767px) {
+    .setas {
+        touch-action: manipulation;
+    }
 }
 
 .mainsetas {
